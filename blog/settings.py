@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-a-!4&sukr4&u5cxd!hq16q(^(4$f&s2_h@rea_2n_&ofl1w@y0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["enigmatic-forest-14992.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
