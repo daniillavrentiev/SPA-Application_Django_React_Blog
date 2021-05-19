@@ -38,7 +38,7 @@ class BlogPost(models.Model):
     in_archive = models.BooleanField(default=False)
     related_posts = models.ManyToManyField('BlogPost', null=True, blank=True)
     objects = BlogPostManager()
-
+    pub_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return f'{self.title} из категории {self.blog_category.name}, {self.id}'

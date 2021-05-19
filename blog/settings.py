@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-a-!4&sukr4&u5cxd!hq16q(^(4$f&s2_h@rea_2n_&ofl1w@y0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["enigmatic-forest-14992.herokuapp.com", "127.0.0.1", '0.0.0.0']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -80,12 +80,8 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 
 DATABASES = {
     'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'd84bv63t41brhe',
-       'HOST': 'ec2-3-218-71-191.compute-1.amazonaws.com',
-       'PORT': 5432,
-       'USER': 'xgcpdhmzaoedoa',
-       'PASSWORD': 'ef773b194d75a2349e0afa07513a82f033a46c9646ff529837a568d9fc203c3b',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 # ec2-54-160-96-70.compute-1.amazonaws.com
