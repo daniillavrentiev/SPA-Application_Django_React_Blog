@@ -19,7 +19,7 @@ function PostDetail({ match }){
     useEffect(() => {
         axios({
             method: "GET",
-            url: `http://127.0.0.1:8000/api/blogpost/${id}/`
+            url: `https://vast-stream-41619.herokuapp.com/api/blogpost/${id}/`
         }).then(response => {
             setPost(response.data)
             setRelatedPost(response.data.related_posts)

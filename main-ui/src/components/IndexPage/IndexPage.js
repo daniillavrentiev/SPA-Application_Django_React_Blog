@@ -16,7 +16,7 @@ function IndexPage(){
     useEffect(() => {
         axios({
             method: "GET",
-            url: `http://127.0.0.1:8000/api/posts-index/`
+            url: `https://vast-stream-41619.herokuapp.com/api/posts-index/`
         }).then(response => {
             setPosts(response.data)
         })
